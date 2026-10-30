@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+    <linearGradient id="chipGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Rounded Base Background with 15% safe margin for maskable icon compliance -->
+  <rect width="512" height="512" rx="108" fill="url(#bgGrad)" />
+
+  <!-- Microcontroller Board Outer Rim -->
+  <rect x="76" y="76" width="360" height="360" rx="32" fill="url(#chipGrad)" stroke="#38bdf8" stroke-width="6" />
+
+  <!-- Corner Mounting Holes -->
+  <circle cx="106" cy="106" r="12" fill="#0284c7" stroke="#38bdf8" stroke-width="4" />
+  <circle cx="406" cy="106" r="12" fill="#0284c7" stroke="#38bdf8" stroke-width="4" />
+  <circle cx="106" cy="406" r="12" fill="#0284c7" stroke="#38bdf8" stroke-width="4" />
+  <circle cx="406" cy="406" r="12" fill="#0284c7" stroke="#38bdf8" stroke-width="4" />
+
+  <!-- Board Trace Lines -->
+  <path d="M106 170 H 160 V 220 H 200" stroke="#0284c7" stroke-width="4" fill="none" stroke-linecap="round" />
+  <path d="M406 170 H 352 V 220 H 312" stroke="#0284c7" stroke-width="4" fill="none" stroke-linecap="round" />
+  <path d="M106 340 H 170 V 292 H 200" stroke="#0284c7" stroke-width="4" fill="none" stroke-linecap="round" />
+  <path d="M406 340 H 342 V 292 H 312" stroke="#0284c7" stroke-width="4" fill="none" stroke-linecap="round" />
+
+  <!-- Center Core MCU Chip -->
+  <rect x="186" y="186" width="140" height="140" rx="16" fill="#020617" stroke="#38bdf8" stroke-width="5" />
+
+  <!-- Bluetooth & Wireless Waves -->
+  <path d="M256 125 L256 160 M240 135 L272 150 L256 160 L272 170 L240 185" stroke="#38bdf8" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- D-Pad Directional Arrows Inside Chip -->
+  <path d="M256 205 L264 218 H248 Z" fill="#38bdf8" />
+  <path d="M256 307 L264 294 H248 Z" fill="#38bdf8" />
+  <path d="M205 256 L218 248 V264 Z" fill="#38bdf8" />
+  <path d="M307 256 L294 248 V264 Z" fill="#38bdf8" />
+
+  <!-- Center Core Indicator LED -->
+  <circle cx="256" cy="256" r="10" fill="#10b981" filter="url(#glow)" />
+
+  <!-- USB Pins / Header Pads at Bottom -->
+  <rect x="236" y="420" width="40" height="16" rx="4" fill="#94a3b8" />
+  <rect x="246" y="424" width="20" height="8" rx="2" fill="#020617" />
+</svg>

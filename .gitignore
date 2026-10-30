@@ -1,0 +1,23 @@
+# Android & Gradle
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+*/build
+*.apk
+*.aab
+captures/
+.externalNativeBuild
+.cxx
+*.keystore
+!debug.keystore
+
+# Node & AI Studio Web
+node_modules/
+dist/
+dist-ssr/
+*.local
+.env
+.env.production

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">EmbedHub</string>
+    <string name="title_connections">Connections</string>
+    <string name="title_terminal">Terminal</string>
+    <string name="title_control">Control</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_automation">Automation</string>
+    <string name="title_profiles">Profiles</string>
+    <string name="title_code">Sketches &amp; OTA</string>
+    <string name="title_settings">Settings</string>
+
+    <!-- Permissions -->
+    <string name="permission_bluetooth_title">Bluetooth Permissions Required</string>
+    <string name="permission_bluetooth_desc">EmbedHub needs Bluetooth Scan and Connect permissions to communicate with BLE (HM-10, Nordic UART, ESP32) and Classic Bluetooth (HC-05, HC-06) modules.</string>
+    <string name="permission_location_title">Location Permission for BLE</string>
+    <string name="permission_location_desc">On Android 11 and older, Bluetooth Low Energy beacon scanning requires location access to find nearby hardware.</string>
+    <string name="permission_notification_title">Background Connection Notifications</string>
+    <string name="permission_notification_desc">EmbedHub runs a background service to maintain robot car control and telemetry even when switching apps or locking the screen.</string>
+    <string name="grant_permission">Grant Permission</string>
+
+    <!-- Connection Transports -->
+    <string name="transport_ble">Bluetooth Low Energy (BLE)</string>
+    <string name="transport_classic_bt">Classic Bluetooth (SPP)</string>
+    <string name="transport_usb_serial">USB OTG Serial</string>
+    <string name="transport_tcp">WiFi TCP Socket</string>
+    <string name="transport_udp">WiFi UDP Packet</string>
+    <string name="transport_websocket">WebSocket (ws://)</string>
+    <string name="transport_http">HTTP Command</string>
+    <string name="transport_mqtt">MQTT Broker</string>
+
+    <!-- Control Actions -->
+    <string name="emergency_stop">EMERGENCY STOP</string>
+    <string name="speed">Speed</string>
+    <string name="failsafe_active">Failsafe triggered (Stop command sent)</string>
+</resources>

@@ -1,0 +1,6 @@
+{
+  "name": "EmbedHub - Universal Arduino & ESP Controller",
+  "description": "All-in-one controller for Arduino and ESP boards with BLE, Classic BT, USB Serial, WiFi, MQTT, Terminal, D-Pad/Joystick, Live Dashboards, and Macro Automation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
